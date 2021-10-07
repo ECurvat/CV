@@ -152,14 +152,14 @@ main {
     flex-direction: column;
 }
 
-header p .name {
+header .name {
     color: #2B2D42;
     font-family: 'Bebas Neue', cursive;
     font-size: 4.5em;
     letter-spacing: 10px;
 }
 
-header p .title {
+header .title {
     width: calc(100% - 20px);
     background-image: radial-gradient(circle, #d90429, #df0f2e, #e41732, #ea1d37, #ef233c);
     color: #ffffff;
@@ -181,4 +181,17 @@ main article {
 
 main article, aside article {
 
+}
+
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    color: #2B2D42;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: 'Nunito', sans-serif;
+    color: #D90429;
+    font-size: 1.3em;
+    font-weight: 600;
 }
