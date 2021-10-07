@@ -1,27 +1,23 @@
 /* Importation des polices d'écriture */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
-
-/* Marges à gauche et à droite pour voir plus d'infos à la fois sans scroller */
+/*
 body {
-    margin: 0 8% 0 8%;
     font-family: 'Hind Madurai', sans-serif;
+    background-color: #EDF2F4;
 }
 
-/* Changement de couleur lors d'une séléction partout sur le document */
 ::selection {
-    background-color: #70a1ff;
+    background-color: #EF233C;
     color: white;
 }
 
-/* Conteneur qui possède les deux sous colonnes après le titre */
 .columns {
     flex-wrap: wrap;
     flex-direction: column;
 }
 
-/* Première sous colonne : à gauche */
 .left-column{
     display: flex;
     flex-wrap: wrap;
@@ -31,7 +27,6 @@ body {
     float: left;
 }
 
-/* Deuxième sous colonne : à droite */
 .right-column{
     display: flex;
     flex-wrap: wrap;
@@ -40,77 +35,76 @@ body {
     float: right;
 }
 
-/* Items des sous colonnes */
 .left-item, .right-item{
     width: 100%;
     height: 100%;
     padding: 10px 0 10px 10px;
-    border-left: solid 5px #5352ed;
+    border-left: solid 5px #8D99AE;
+    overflow: scroll;
 }
 
-/* Titre principal du CV */
 .name {
-    color: #5352ed;
+    color: #2B2D42;
     font-family: 'Bebas Neue', cursive;
     font-size: 4.5em;
     letter-spacing: 10px;
 }
 
-/* Sous-titre */
 .title {
     width: calc(100% - 20px);
-    background-color: #5352ed;
+    background-image: radial-gradient(circle, #d90429, #df0f2e, #e41732, #ea1d37, #ef233c);
     color: #ffffff;
     font-family: 'Nunito', sans-serif;
+    font-weight: 200;
     font-size: 1.25em;
     padding: 10px 0 10px 20px;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
 
-/* Réglage des marges des paragraphes */
 p {
     margin: 0 0 0 0;
 }
 
-/* Mise en forme des titres h1 */
 h1 {
     font-family: 'Bebas Neue', cursive;
     margin-top: -5px;
-    color: #5352ed;
+    color: #2B2D42;
+    font-size: 2em;
 }
 
-/* Mise en forme des titres h2 */
 h2 {
     font-family: 'Nunito', sans-serif;
-    margin-top: 25px;
     margin-bottom: -3px;
-    color: #5352ed;
-    letter-spacing: -1px;
+    color: #D90429;
     font-size: 1.3em;
+    font-weight: 600;
 }
 
-/* Justifier les paragraphes dans les colonnes */
 .left-item p, .right-item p, .left-item ul{
     text-align: justify;
 }
 
-/* Changement des puces des listes à puces */
-ul {
+.interets {
     list-style-type:square;
 }
 
-/* Mise en forme des liens */
-.left-item p a{
+.contact {
+    list-style-type: none;
+}
+
+
+.left-item ul a{
     text-decoration: none;
     color: white;
-    background-color: #5352ed;
+    background-color: #EF233C;
 }
 
 .flexbox-container {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    overflow:scroll;
 }
 
 .profil {
@@ -118,6 +112,73 @@ ul {
 }
 
 .skills {
-    columns: 2;
-    gap: 10px;
+    columns: 3;
+    gap: 50px;
+}
+
+#picture-container{
+    border-left: 0;
+} 
+*/
+
+
+
+section {
+    grid-template-columns: 30vw 50vw;
+    grid-template-rows: 1fr 10fr;
+    display: grid;
+    justify-content: center;
+    column-gap: 10vh;
+}
+
+header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+aside {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+main {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+header p .name {
+    color: #2B2D42;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 4.5em;
+    letter-spacing: 10px;
+}
+
+header p .title {
+    width: calc(100% - 20px);
+    background-image: radial-gradient(circle, #d90429, #df0f2e, #e41732, #ea1d37, #ef233c);
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    font-size: 1.25em;
+    padding: 10px 0 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+aside article {
+
+}
+
+main article {
+
+}
+
+main article, aside article {
+
 }
