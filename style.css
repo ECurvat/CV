@@ -121,7 +121,9 @@ h2 {
 } 
 */
 
-
+body {
+    background-color: #EDF2F4;
+}
 
 section {
     grid-template-columns: 30vw 50vw;
@@ -129,6 +131,7 @@ section {
     display: grid;
     justify-content: center;
     column-gap: 10vh;
+    font-family: 'Hind Madurai', sans-serif;
 }
 
 header {
@@ -180,7 +183,9 @@ main article {
 }
 
 main article, aside article {
-
+    padding: 10px 0 10px 10px;
+    border-left: solid 5px #8D99AE;
+    overflow: scroll;
 }
 
 h1 {
