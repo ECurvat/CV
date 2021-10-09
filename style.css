@@ -121,6 +121,9 @@ h2 {
 } 
 */
 
+body {
+    background-color: #EDF2F4;
+}
 
 section {
     grid-template-columns: 25vw 45vw;
@@ -129,7 +132,6 @@ section {
     justify-content: center;
     column-gap: 10vh;
     font-family: 'Hind Madurai', sans-serif;
-    height: 100vh;
 }
 
 header {
@@ -158,8 +160,6 @@ header .name {
     font-family: 'Bebas Neue', cursive;
     font-size: 4.5em;
     letter-spacing: 10px;
-    margin-top: auto;
-    margin-bottom: auto;
 }
 
 header .title {
@@ -186,19 +186,21 @@ main article, aside article {
     padding: 10px 0 10px 10px;
     border-left: solid 5px #8D99AE;
     overflow: scroll;
+<<<<<<< HEAD
     margin-bottom: 2%;
     transition: transform .3s;
 }
 
 main article:hover, aside article:hover{
     transform: scale(1.02);
+=======
+>>>>>>> parent of d4ef7b2 (More css)
 }
 
 h1 {
     font-family: 'Bebas Neue', cursive;
     color: #2B2D42;
     font-size: 2em;
-    margin: auto;
 }
 
 h2 {
@@ -206,24 +208,12 @@ h2 {
     color: #D90429;
     font-size: 1.3em;
     font-weight: 600;
+<<<<<<< HEAD
     letter-spacing: -1px;
 }
 
 aside div img {
     width:30vh;
-}
-
-li {
-    list-style-type: none;
-}
-
-a {
-    background-color: #ef233c;
-    color: white;
-    text-decoration: none;
-}
-
-a:hover {
-    background-color: #d90429;
-    transition: 0.2s;
+=======
+>>>>>>> parent of d4ef7b2 (More css)
 }
