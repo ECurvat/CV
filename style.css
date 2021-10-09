@@ -186,15 +186,12 @@ main article, aside article {
     padding: 10px 0 10px 10px;
     border-left: solid 5px #8D99AE;
     overflow: scroll;
-<<<<<<< HEAD
     margin-bottom: 2%;
     transition: transform .3s;
 }
 
 main article:hover, aside article:hover{
     transform: scale(1.02);
-=======
->>>>>>> parent of d4ef7b2 (More css)
 }
 
 h1 {
@@ -208,12 +205,9 @@ h2 {
     color: #D90429;
     font-size: 1.3em;
     font-weight: 600;
-<<<<<<< HEAD
     letter-spacing: -1px;
 }
 
 aside div img {
     width:30vh;
-=======
->>>>>>> parent of d4ef7b2 (More css)
 }
