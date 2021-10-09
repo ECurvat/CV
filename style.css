@@ -126,7 +126,7 @@ body {
 }
 
 section {
-    grid-template-columns: 25vw 45vw;
+    grid-template-columns: 30vw 50vw;
     grid-template-rows: 1fr 10fr;
     display: grid;
     justify-content: center;
@@ -191,6 +191,8 @@ main article, aside article {
 }
 
 main article:hover, aside article:hover{
+    /* transition: 1s ease-in-out;
+    transform: scale(1.05); */
     transform: scale(1.02);
 }
 
@@ -209,5 +211,6 @@ h2 {
 }
 
 aside div img {
-    width:30vh;
+    width:25%;
+    height: 25%;
 }
