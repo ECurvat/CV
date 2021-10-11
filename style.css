@@ -124,12 +124,11 @@ h2 {
 
 section {
     grid-template-columns: 30vw 50vw;
-    grid-template-rows: 1fr 10fr;
+    grid-template-rows: 1fr 5fr;
     display: grid;
     justify-content: center;
     column-gap: 10vh;
     font-family: 'Hind Madurai', sans-serif;
-    height: 100vh;
 }
 
 header {
