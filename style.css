@@ -121,9 +121,6 @@ h2 {
 } 
 */
 
-body {
-    background-color: #EDF2F4;
-}
 
 section {
     grid-template-columns: 30vw 50vw;
@@ -132,6 +129,7 @@ section {
     justify-content: center;
     column-gap: 10vh;
     font-family: 'Hind Madurai', sans-serif;
+    height: 100vh;
 }
 
 header {
@@ -160,6 +158,8 @@ header .name {
     font-family: 'Bebas Neue', cursive;
     font-size: 4.5em;
     letter-spacing: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 header .title {
@@ -200,6 +200,7 @@ h1 {
     font-family: 'Bebas Neue', cursive;
     color: #2B2D42;
     font-size: 2em;
+    margin: auto;
 }
 
 h2 {
@@ -213,4 +214,19 @@ h2 {
 aside div img {
     width:25%;
     height: 25%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    background-color: #ef233c;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #d90429;
+    transition: 0.2s;
 }
