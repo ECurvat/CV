@@ -123,7 +123,7 @@ h2 {
 
 
 section {
-    grid-template-columns: 30vw 50vw;
+    grid-template-columns: 25vw 45vw;
     grid-template-rows: 1fr 5fr;
     display: grid;
     justify-content: center;
@@ -211,8 +211,8 @@ h2 {
 }
 
 aside div img {
-    width:25%;
-    height: 25%;
+    width:75%;
+    height: 75%;
 }
 
 li {
