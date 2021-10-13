@@ -2,126 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind+Madurai&display=swap');
-/*
-body {
-    font-family: 'Hind Madurai', sans-serif;
-    background-color: #EDF2F4;
-}
 
-::selection {
-    background-color: #EF233C;
-    color: white;
-}
-
-.columns {
-    flex-wrap: wrap;
-    flex-direction: column;
-}
-
-.left-column{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: calc(30% - 10px);
-    gap: 1em;
-    float: left;
-}
-
-.right-column{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: calc(60% - 10px);
-    float: right;
-}
-
-.left-item, .right-item{
-    width: 100%;
-    height: 100%;
-    padding: 10px 0 10px 10px;
-    border-left: solid 5px #8D99AE;
-    overflow: scroll;
-}
-
-.name {
-    color: #2B2D42;
-    font-family: 'Bebas Neue', cursive;
-    font-size: 4.5em;
-    letter-spacing: 10px;
-}
-
-.title {
-    width: calc(100% - 20px);
-    background-image: radial-gradient(circle, #d90429, #df0f2e, #e41732, #ea1d37, #ef233c);
-    color: #ffffff;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 200;
-    font-size: 1.25em;
-    padding: 10px 0 10px 20px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-}
-
-p {
-    margin: 0 0 0 0;
-}
-
-h1 {
-    font-family: 'Bebas Neue', cursive;
-    margin-top: -5px;
-    color: #2B2D42;
-    font-size: 2em;
-}
-
-h2 {
-    font-family: 'Nunito', sans-serif;
-    margin-bottom: -3px;
-    color: #D90429;
-    font-size: 1.3em;
-    font-weight: 600;
-}
-
-.left-item p, .right-item p, .left-item ul{
-    text-align: justify;
-}
-
-.interets {
-    list-style-type:square;
-}
-
-.contact {
-    list-style-type: none;
-}
-
-
-.left-item ul a{
-    text-decoration: none;
-    color: white;
-    background-color: #EF233C;
-}
-
-.flexbox-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    overflow:scroll;
-}
-
-.profil {
-    width: 60%;
-}
-
-.skills {
-    columns: 3;
-    gap: 50px;
-}
-
-#picture-container{
-    border-left: 0;
-} 
-*/
-
-
+/* Création de la grille sur le body et police d'écriture générale */
 body {
     grid-template-columns: 25vw 45vw;
     grid-template-rows: 1fr 5fr;
@@ -131,11 +13,13 @@ body {
     font-family: 'Hind Madurai', sans-serif;
 }
 
+/* Le header prend toute la largeur de la grid */
 header {
     grid-column-start: 1;
     grid-column-end: 3;
 }
 
+/* Colonne de gauche en grid et éléments dedans affichés en colonne */
 aside {
     grid-row-start: 2;
     grid-row-end: 3;
@@ -143,6 +27,7 @@ aside {
     flex-direction: column;
 }
 
+/* Partie principale du CV et disposition des éléments dedans en colonne */
 main {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -152,6 +37,7 @@ main {
     flex-direction: column;
 }
 
+/* Stylisation du titre */
 header .name {
     color: #2B2D42;
     font-family: 'Bebas Neue', cursive;
@@ -161,6 +47,7 @@ header .name {
     margin-bottom: auto;
 }
 
+/* Stylisation du sous-titre avec dégradé */
 header .title {
     width: calc(100% - 20px);
     background-image: radial-gradient(circle, #d90429, #df0f2e, #e41732, #ea1d37, #ef233c);
@@ -173,28 +60,21 @@ header .title {
     letter-spacing: 5px;
 }
 
-aside article {
-
-}
-
-main article {
-
-}
-
+/* Placement des éléments, barre à gauche et animation en sortie de click */
 main article, aside article {
     padding: 10px 0 10px 10px;
     border-left: solid 5px #8D99AE;
     overflow: scroll;
     margin-bottom: 2%;
-    transition: transform .3s;
+    transition: transform .4s;
 }
 
+/* Animation quand on passe la souris sur chaque élément */
 main article:hover, aside article:hover{
-    /* transition: 1s ease-in-out;
-    transform: scale(1.05); */
     transform: scale(1.02);
 }
 
+/* Stylisation des h1 */
 h1 {
     font-family: 'Bebas Neue', cursive;
     color: #2B2D42;
@@ -202,6 +82,7 @@ h1 {
     margin: auto;
 }
 
+/* Stylisation des h2 */
 h2 {
     font-family: 'Nunito', sans-serif;
     color: #D90429;
@@ -210,21 +91,25 @@ h2 {
     letter-spacing: -1px;
 }
 
+/* Taille de la photo de profil par rapport au conteneur */
 aside div img {
     width:75%;
     height: 75%;
 }
 
+/* On retire les puces des listes à puce */
 li {
     list-style-type: none;
 }
 
+/* Stylisation des liens */
 a {
     background-color: #ef233c;
     color: white;
     text-decoration: none;
 }
 
+/* Animation quand on passe la souris sur un lien */
 a:hover {
     background-color: #d90429;
     transition: 0.2s;
