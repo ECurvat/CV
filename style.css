@@ -27,7 +27,7 @@ aside {
     flex-direction: column;
 }
 
-/* Partie principale du CV et disposition des éléments dedans en colonne */
+/* Partie principale du CV (colonne de droite) et disposition des éléments dedans en colonne */
 main {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -69,7 +69,7 @@ main article, aside article {
     transition: transform .4s;
 }
 
-/* Animation quand on passe la souris sur chaque élément */
+/* Animation quand on passe la souris sur chaque article */
 main article:hover, aside article:hover{
     transform: scale(1.02);
 }
@@ -102,7 +102,7 @@ li {
     list-style-type: none;
 }
 
-/* Stylisation des liens */
+/* Stylisation de tous les liens */
 a {
     background-color: #ef233c;
     color: white;
@@ -115,27 +115,32 @@ a:hover {
     transition: 0.2s;
 }
 
+/* On change la couleur et le fond des éléments sélectionnés */
 ::selection {
     background-color: #2B2D42;
     color: white;
 }
 
+/* Définition de la grille pour les compétences, langues et logiciels */
 .skills-grid {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     display: grid;
 }
 
+/* La partie qualités prend la première colonne */
 .qualites {
     grid-column-start: 1;
     grid-column-end: 2;
 }
 
+/* La partie logiciels prend la deuxième colonne */
 .skills {
     grid-column-start: 2;
     grid-column-end: 3;
 }
 
+/* La partie langues prend la dernière colonne */
 .languages {
     grid-column-start: 3;
     grid-column-end: 4;
