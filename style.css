@@ -114,3 +114,29 @@ a:hover {
     background-color: #d90429;
     transition: 0.2s;
 }
+
+::selection {
+    background-color: #2B2D42;
+    color: white;
+}
+
+.skills-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    display: grid;
+}
+
+.qualites {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.skills {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.languages {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
